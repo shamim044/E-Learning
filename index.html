@@ -1,11 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-Lerning</title>
+    <link rel="shortcut icon" href="./images/Group 20 (2).png" type="image/x-icon">
+    <!-- font-awsom-font -->
+    <link rel="stylesheet" href="./CSS/all.min.css">
+    <!-- google-font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- tailwind-cdn-link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.7.3/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+        <style>
+            .ubuntu-font {
+                font-family: 'Ubuntu', sans-serif;
+            }
+
+            p {
+                color: #121421;
+                font-size: 1rem;
+                ;
+            }
+            header{
+                background-image: url(./images/banner1.png);
+                background-size: cover;
+                background-position: left center;
+                background-repeat: no-repeat;
+            }
+            .banner-card .bg-card-1{
+              box-shadow: 0px 20px 25px -7px rgba(254, 197, 45, 0.50);
+            }
+            .banner-card .bg-card-2{
+                box-shadow: 0px 20px 25px -7px rgba(31, 188, 255, 0.50);
+            }
+            .banner-card .bg-card-3{
+                box-shadow: 0px 20px 25px -7px rgba(255, 133, 2, 0.50);
+            }
+        </style>
 </head>
-<body>
+
+<body class="ubuntu-font">
+    <header>
+        <!-- navbar-start -->
+        <div class="border-b">
+            <div class="max-w-[1256px] mx-auto px-5">
+                <div class="navbar justify-between py-0">
+                    <div class="navbar-start">
+                        <div class="dropdown">
+                            <label tabindex="0" class="btn btn-ghost lg:hidden">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                            </label>
+                            <ul tabindex="0"
+                                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                                <li><a class="">Courses</a></li>
+                                <li><a>Membership</a></li>
+                                <li><a>Teams</a></li>
+                                <li><a>Community</a></li>
+                            </ul>
+                        </div>
+                        <a href="#" class="border-r px-6 py-10"><img src="./images/Group 20 (2).png" alt=""></a>
+                    </div>
+                    <div class="navbar-center hidden lg:flex">
+                        <ul class="menu menu-horizontal p-0">
+                            <li class="border-l-0 px-6 py-10"><a class="hover:bg-transparent text-base text-white">Courses</a></li>
+                            <li class="border-l px-6 py-10"><a class="hover:bg-transparent text-base text-white">Membership</a>
+                            </li>
+                            <li class="border-l px-6 py-10"><a class="hover:bg-transparent text-base text-white">Teams</a></li>
+                            <li class="border-l border-r px-6 py-10 text-white"><a
+                                    class="hover:bg-transparent text-base">Community</a></li>
+                        </ul>
+                    </div>
+                    <div class="navbar-end w-auto lg:w-[250px] justify-end ml-6">
+                        <a href="#"
+                            class="bg-white rounded-se-lg rounded-es-lg py-4 px-8 boxShadow font-medium text-text-color">Enroll
+                            Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- navbar-end -->
+
+        <!-- banner-start -->
+        <div class="banner text-center pt-16 pb-80">
+            <h1 class="text-6xl text-white font-bold mb-16">Grow Your Skills to<br> Advance Your Career Path.</h1>
+            <ul class="flex justify-center mb-11">
+                <li><p class="text-white px-6">No Credit Card Required</p></li>
+                <li><p class="text-white px-6 border-r border-l">7 Days Trial</p></li>
+                <li><p class="text-white px-6">Free For Teachers</p></li>
+            </ul>
+            <a href="#" class="text-white rounded-se-lg rounded-es-lg py-4 px-8 boxShadow font-medium bg-theme-color">Get Started Now</a>
+        </div>
+
+        <!-- banner-end -->
+    </header>
+    <!-- banner-card -->
+    <div class="max-w-[1256px] mx-auto px-5 mt-[-225px] mb-10">
+        <div class="banner-card grid grid-cols-3 gap-20">
+            <div class="mx-w-[350px] mx-h-[450px] bg-card-1 rounded-se-[30px] rounded-es-[30px] relative">
+                <img src="./images/men1.png" class="absolut bottom-0 h-full w-auto">
+            </div>
+            <div class="mx-w-[350px] mx-h-[450px] bg-card-2 rounded-se-[30px] rounded-es-[30px] relative">
+                <img src="./images/men2.png" class="absolut bottom-0 h-full w-auto">
+            </div>
+            <div class="mx-w-[350px] mx-h-[450px] bg-card-3 rounded-se-[30px] rounded-es-[30px] relative">
+                <img src="./images/men3.png"  class="absolut bottom-0 h-full w-auto">
+            </div>
+            
+        </div>
+    </div>
     
+    <!-- banner-card -->
+
+    <script src="./js/index.js"></script>
 </body>
+
 </html>
