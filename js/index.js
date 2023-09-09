@@ -11,7 +11,7 @@ tailwind.config = {
                 'banner-bottom': '#121212cc',
             },
             backgroundImage: {
-                'hero-bg2': "linear-gradient(rgba(000, 000, 000, 0.6), rgba(000, 000, 000, 0.7)), url('./images/banner2.png')",
+                'hero-bg2': "url('./images/Group 11')",
                 'hero-bg3': "linear-gradient(rgba(000, 000, 000, 0.6), rgba(000, 000, 000, 0.7)), url('./images/banner3.png')",
                 'hero-bg4': "linear-gradient(rgba(000, 000, 000, 0.6), rgba(000, 000, 000, 0.7)), url('./images/banner4.png')",
             },
