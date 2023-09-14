@@ -45,6 +45,29 @@
         .banner-card .bg-card-3 {
             box-shadow: 0px 20px 25px -7px rgba(255, 133, 2, 0.50);
         }
+
+        .buttonBox {
+            box-shadow: 0px 15px 25px -7px rgba(255, 35, 89, 0.30);
+        }
+
+        .sucial-button {
+            transform: translateX(70%)
+        }
+
+        .card-box {
+            box-shadow: 0px 0px 60px 0px rgba(89, 105, 166, 0.09);
+        }
+
+        .card-box-hov {
+            box-shadow: 0px 0px 60px 0px rgba(255, 35, 89, 0.10);
+        }
+        .most-popular-button li a{
+            background: rgba(155, 155, 155, 0.10);
+        }
+        .most-popular-button li a:hover,
+        :hover.most-card{
+            box-shadow: 0px 0px 60px 0px rgba(255, 35, 89, 0.10);
+        }
     </style>
 </head>
 
@@ -87,7 +110,7 @@
                     </div>
                     <div class="navbar-end w-auto lg:w-[250px] justify-end ml-6">
                         <a href="#"
-                            class="bg-white rounded-se-lg rounded-es-lg py-4 px-8 boxShadow font-medium text-text-color">Enroll
+                            class="bg-white rounded-se-lg rounded-es-lg py-4 px-8 boxShadow font-medium text-text-color buttonBox">Enroll
                             Now</a>
                     </div>
                 </div>
@@ -115,12 +138,13 @@
         </div>
 
         <!-- banner-end -->
-
-    
-        <div class="max-w-[1367px] mx-auto px-5 mt-[-225px] mb-10 absolute">
+    </header>
+    <main>
+        <!-- banner-card -->
+        <div class="px-5 mt-[-225px] mb-10 ">
             <div class="banner-card grid grid-cols-3 gap-20 w-[1215px] mx-auto">
                 <div class="">
-                    <img src="./images/men.png" class="w-[475px] h-[515px] object-cover">
+                    <img src="./images/Group 33.png" class="w-[475px] h-[515px] object-cover">
                 </div>
                 <div class="">
                     <img src="./images/Group 22.png" class="w-[475px] h-[515px] object-cover">
@@ -130,16 +154,324 @@
                 </div>
             </div>
         </div>
-    </header>
-    <!-- banner-card -->
+        <!-- banner-card -->
 
-    
+        <!-- courses-start -->
+        <div class="bg-[#FBF3EC] mt-[-330px] pb-[100px] clear-both pt-[330px]">
+            <!-- our-course-start -->
+            <div class="grid grid-cols-2 max-w-[1368px] mx-auto px-5  gap-9 clear-both pt-16 pl-[67px] relative">
+                <div class="shap-lef absolute">
+                    <img src="./images/cour-ab.png" alt="">
+                </div>
 
+                <div class="course-text">
+                    <h2 class="text-4xl font-bold mb-6">High Quality Video, Audio & <br>Live Class.</h2>
+                    <p>High-defination video is video of higher resolution and quality<br> than standar-definition.
+                        While there is no standardized meaning<br> for high-definition, generally any video image.</p>
+                    <a href="#"
+                        class="text-white rounded-se-lg rounded-es-lg py-4 px-8 boxShadow font-medium bg-theme-color mt-11 mb-16 inline-block buttonBox">Visit
+                        Courses</a>
+                    <div class="courses-button grid grid-cols-2 gap-8">
+                        <div class="single-course-button flex bg-white p-3 items-center rounded-lg">
+                            <div
+                                class="h-[46px] w-[46px] bg-[#E5FFF3] rounded-lg flex justify-center items-center mr-4">
+                                <i class="fa-solid fa-volume-low text-[#00C968]"></i>
+                            </div>
+                            <p class="font-medium text-xl">Audio Classes</p>
+                        </div>
+                        <div class="single-course-button flex bg-white p-3 items-center rounded-lg">
+                            <div
+                                class="h-[46px] w-[46px] rounded-lg flex justify-center items-center mr-4 bg-[#FFF4F2]">
+                                <i class="fa-solid fa-wifi text-[#FF6652]"></i>
+                            </div>
+                            <p class="font-medium text-xl">Live Classes</p>
+                        </div>
+                        <div class="single-course-button flex bg-white p-3 items-center rounded-lg">
+                            <div
+                                class="h-[46px] w-[46px] rounded-lg flex justify-center items-center mr-4 bg-[#F8F2FF]">
+                                <i class="fa-regular fa-circle-play text-[#9C4DF4]"></i>
+                            </div>
+                            <p class="font-medium text-xl">Recoded Class</p>
+                        </div>
+                        <div class="single-course-button flex bg-white p-3 items-center rounded-lg">
+                            <div
+                                class="h-[46px] w-[46px] rounded-lg flex justify-center items-center mr-4 bg-[#EEF3FF]">
+                                <i class="fa-regular fa-file-lines text-[#3B72FF]"></i>
+                            </div>
+                            <p class="font-medium text-xl">50+ Notes</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-img h-[535px] max-w-[649px] bg-white rounded-2xl p-4 relative z-20">
+                    <img src="./images/weman.png" alt="" class="w-full h-full ">
+                    <div class="sucial-button flex absolute bottom-14">
+                        <div
+                            class="h-[48px] w-[48px] rounded-full bg-white cursor-pointer hover:bg-theme-color hover:text-white flex items-center justify-center">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                        <div
+                            class="ml-6 h-[48px] w-[48px] rounded-full bg-white cursor-pointer hover:bg-theme-color hover:text-white flex items-center justify-center">
+                            <i class="fa-solid fa-microphone-slash"></i>
+                        </div>
+                        <div
+                            class="ml-6 h-[48px] w-[48px] rounded-full bg-white cursor-pointer hover:bg-theme-color hover:text-white flex items-center justify-center">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div
+                            class="ml-6 h-[48px] w-[48px] rounded-full bg-white cursor-pointer hover:bg-theme-color hover:text-white flex items-center justify-center">
+                            <i class="fa-solid fa-video"></i>
+                        </div>
+                    </div>
+                    <div class="absolute h-[170px] w-[170px] left-[-34px] bottom-[-45px]">
+                        <img src="./images/cours1.png" alt="">
+                    </div>
+                    <div class="absolute top-16 left-[-60px]">
+                        <img src="./images/cou-ab-2.png" alt="">
+                    </div>
+                    <div class="absolute top-[225px] right-[-38px]">
+                        <img src="./images/cour-ab-3.png" alt="">
+                    </div>
+                    <div class="absolute top-[-8px] right-[-46px]">
+                        <img src="./images/ab-pin.png" alt="">
+                    </div>
+                    <div class="absolute bottom-[-34px] right-[-31px] z-0">
+                        <img src="./images/Frame 11.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- our-course-end -->
+        </div>
+        <!-- courses-end -->
 
-    <!-- banner-card -->
-
-    <main>
-        <div class="bg-red-400 h-10"></div>
+        <!-- most-popular-start -->
+        <div class="max-w-[1368px] mx-auto px-5 my-[120px]">
+            <div class="most-popular-hadding text-center">
+                <h2 class="text-4xl font-bold">Our Most Popular Courses</h2>
+                <p class="mb-10 mt-6">It is a long established fact that a reader will be distracted by the readable
+                    content <br>of a page when looking at its layout.</p>
+            </div>
+            <ul class="most-popular-button flex justify-center mb-10">
+                <li><a href="#"
+                        class="py-2 px-5 rounded-se-lg rounded-es-lg mx-3 hover:bg-theme-color hover:text-white">All
+                        Courses</a></li>
+                <li><a href="#"
+                        class="py-2 px-5 rounded-se-lg rounded-es-lg mx-3 hover:bg-theme-color hover:text-white">UI/UX
+                        Design</a></li>
+                <li><a href="#"
+                        class="py-2 px-5 rounded-se-lg rounded-es-lg mx-3 hover:bg-theme-color hover:text-white">Gaming/Art</a>
+                </li>
+                <li><a href="#"
+                        class="py-2 px-5 rounded-se-lg rounded-es-lg mx-3 hover:bg-theme-color hover:text-white">Photography</a>
+                </li>
+                <li><a href="#"
+                        class="py-2 px-5 rounded-se-lg rounded-es-lg mx-3 hover:bg-theme-color hover:text-white">Health</a>
+                </li>
+                <li><a href="#"
+                        class="py-2 px-5 rounded-se-lg rounded-es-lg mx-3 hover:bg-theme-color hover:text-white">Animation</a>
+                </li>
+                <li><a href="#"
+                        class="py-2 px-5 rounded-se-lg rounded-es-lg mx-3 hover:bg-theme-color hover:text-white">Digital
+                        Media</a></li>
+                <li><a href="#"
+                        class="py-2 px-5 rounded-se-lg rounded-es-lg mx-3 hover:bg-theme-color hover:text-white">Web
+                        Development</a></li>
+            </ul>
+            <div class="most-popular-card grid grid-cols-3 gap-8">
+                <!-- single-card -->
+                <div class="most-card rounded-se-2xl rounded-es-2xl card-box p-6 hover:card-box-hov">
+                    <img src="./images/card-1.png" class="rounded-lg w-full" alt="">
+                    <ul class="mont-card-rating flex mt-6">
+                        <li class="flex items-center">
+                            <p class="rounded-full border h-6 w-6 flex justify-center items-center mr-3"><i
+                                    class="fa-regular fa-user text-[14px]"></i></p>
+                            <p class="text-base">5.6k</p>
+                        </li>
+                        <li class="flex items-center ml-6">
+                            <p class="rounded-full border h-6 w-6 flex justify-center items-center mr-3"><i
+                                    class="fa-regular fa-eye"></i></p>
+                            <p class="text-base">86k</p>
+                        </li>
+                        <li class="flex items-center ml-6">
+                            <p class="rounded-full border h-6 w-6 flex justify-center items-center mr-3"><i
+                                    class="fa-regular fa-star"></i></p>
+                            <p class="text-base">4.9</p>
+                        </li>
+                    </ul>
+                    <h2 class="mt-4 mb-6 text-2xl font-medium">Complete Python Bootcamp<br>From Zero to Hero in Python
+                    </h2>
+                    <ul class="flex justify-between">
+                        <li>
+                            <p class="font-medium text-3xl">$150.00</p>
+                        </li>
+                        <li>
+                            <a href="#" class="py-3 px-9 text-theme-color border rounded-se-2xl rounded-es-2xl text-lg font-medium border-theme-color hover:bg-theme-color hover:text-white hover:buttonBox">Buy Now</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- single-card -->
+                <!-- single-card -->
+                <div class="most-card rounded-se-2xl rounded-es-2xl card-box p-6 hover:card-box-hov">
+                    <img src="./images/card-2.png" class="rounded-lg w-full" alt="">
+                    <ul class="mont-card-rating flex mt-6">
+                        <li class="flex items-center">
+                            <p class="rounded-full border h-6 w-6 flex justify-center items-center mr-3"><i
+                                    class="fa-regular fa-user text-[14px]"></i></p>
+                            <p class="text-base">5.6k</p>
+                        </li>
+                        <li class="flex items-center ml-6">
+                            <p class="rounded-full border h-6 w-6 flex justify-center items-center mr-3"><i
+                                    class="fa-regular fa-eye"></i></p>
+                            <p class="text-base">86k</p>
+                        </li>
+                        <li class="flex items-center ml-6">
+                            <p class="rounded-full border h-6 w-6 flex justify-center items-center mr-3"><i
+                                    class="fa-regular fa-star"></i></p>
+                            <p class="text-base">4.9</p>
+                        </li>
+                    </ul>
+                    <h2 class="mt-4 mb-6 text-2xl font-medium">Complete Python Bootcamp<br>From Zero to Hero in Python
+                    </h2>
+                    <ul class="flex justify-between">
+                        <li>
+                            <p class="font-medium text-3xl">$150.00</p>
+                        </li>
+                        <li>
+                            <a href="#" class="py-3 px-9 text-theme-color border rounded-se-2xl rounded-es-2xl text-lg font-medium border-theme-color hover:bg-theme-color hover:text-white hover:buttonBox">Buy Now</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- single-card -->
+                <!-- single-card -->
+                <div class="most-card rounded-se-2xl rounded-es-2xl card-box p-6 hover:card-box-hov">
+                    <img src="./images/card-3.png" class="rounded-lg w-full" alt="">
+                    <ul class="mont-card-rating flex mt-6">
+                        <li class="flex items-center">
+                            <p class="rounded-full border h-6 w-6 flex justify-center items-center mr-3"><i
+                                    class="fa-regular fa-user text-[14px]"></i></p>
+                            <p class="text-base">5.6k</p>
+                        </li>
+                        <li class="flex items-center ml-6">
+                            <p class="rounded-full border h-6 w-6 flex justify-center items-center mr-3"><i
+                                    class="fa-regular fa-eye"></i></p>
+                            <p class="text-base">86k</p>
+                        </li>
+                        <li class="flex items-center ml-6">
+                            <p class="rounded-full border h-6 w-6 flex justify-center items-center mr-3"><i
+                                    class="fa-regular fa-star"></i></p>
+                            <p class="text-base">4.9</p>
+                        </li>
+                    </ul>
+                    <h2 class="mt-4 mb-6 text-2xl font-medium">Complete Python Bootcamp<br>From Zero to Hero in Python
+                    </h2>
+                    <ul class="flex justify-between">
+                        <li>
+                            <p class="font-medium text-3xl">$150.00</p>
+                        </li>
+                        <li>
+                            <a href="#" class="py-3 px-9 text-theme-color border rounded-se-2xl rounded-es-2xl text-lg font-medium border-theme-color hover:bg-theme-color hover:text-white hover:buttonBox">Buy Now</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- single-card -->
+                <!-- single-card -->
+                <div class="most-card rounded-se-2xl rounded-es-2xl card-box p-6 hover:card-box-hov">
+                    <img src="./images/card-1.png" class="rounded-lg w-full" alt="">
+                    <ul class="mont-card-rating flex mt-6">
+                        <li class="flex items-center">
+                            <p class="rounded-full border h-6 w-6 flex justify-center items-center mr-3"><i
+                                    class="fa-regular fa-user text-[14px]"></i></p>
+                            <p class="text-base">5.6k</p>
+                        </li>
+                        <li class="flex items-center ml-6">
+                            <p class="rounded-full border h-6 w-6 flex justify-center items-center mr-3"><i
+                                    class="fa-regular fa-eye"></i></p>
+                            <p class="text-base">86k</p>
+                        </li>
+                        <li class="flex items-center ml-6">
+                            <p class="rounded-full border h-6 w-6 flex justify-center items-center mr-3"><i
+                                    class="fa-regular fa-star"></i></p>
+                            <p class="text-base">4.9</p>
+                        </li>
+                    </ul>
+                    <h2 class="mt-4 mb-6 text-2xl font-medium">Complete Python Bootcamp<br>From Zero to Hero in Python
+                    </h2>
+                    <ul class="flex justify-between">
+                        <li>
+                            <p class="font-medium text-3xl">$150.00</p>
+                        </li>
+                        <li>
+                            <a href="#" class="py-3 px-9 text-theme-color border rounded-se-2xl rounded-es-2xl text-lg font-medium border-theme-color hover:bg-theme-color hover:text-white hover:buttonBox">Buy Now</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- single-card -->
+                <!-- single-card -->
+                <div class="most-card rounded-se-2xl rounded-es-2xl card-box p-6 hover:card-box-hov">
+                    <img src="./images/card-1.png" class="rounded-lg w-full" alt="">
+                    <ul class="mont-card-rating flex mt-6">
+                        <li class="flex items-center">
+                            <p class="rounded-full border h-6 w-6 flex justify-center items-center mr-3"><i
+                                    class="fa-regular fa-user text-[14px]"></i></p>
+                            <p class="text-base">5.6k</p>
+                        </li>
+                        <li class="flex items-center ml-6">
+                            <p class="rounded-full border h-6 w-6 flex justify-center items-center mr-3"><i
+                                    class="fa-regular fa-eye"></i></p>
+                            <p class="text-base">86k</p>
+                        </li>
+                        <li class="flex items-center ml-6">
+                            <p class="rounded-full border h-6 w-6 flex justify-center items-center mr-3"><i
+                                    class="fa-regular fa-star"></i></p>
+                            <p class="text-base">4.9</p>
+                        </li>
+                    </ul>
+                    <h2 class="mt-4 mb-6 text-2xl font-medium">Complete Python Bootcamp<br>From Zero to Hero in Python
+                    </h2>
+                    <ul class="flex justify-between">
+                        <li>
+                            <p class="font-medium text-3xl">$150.00</p>
+                        </li>
+                        <li>
+                            <a href="#" class="py-3 px-9 text-theme-color border rounded-se-2xl rounded-es-2xl text-lg font-medium border-theme-color hover:bg-theme-color hover:text-white hover:buttonBox">Buy Now</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- single-card -->
+                <!-- single-card -->
+                <div class="most-card rounded-se-2xl rounded-es-2xl card-box p-6 hover:card-box-hov">
+                    <img src="./images/card-1.png" class="rounded-lg w-full" alt="">
+                    <ul class="mont-card-rating flex mt-6">
+                        <li class="flex items-center">
+                            <p class="rounded-full border h-6 w-6 flex justify-center items-center mr-3"><i
+                                    class="fa-regular fa-user text-[14px]"></i></p>
+                            <p class="text-base">5.6k</p>
+                        </li>
+                        <li class="flex items-center ml-6">
+                            <p class="rounded-full border h-6 w-6 flex justify-center items-center mr-3"><i
+                                    class="fa-regular fa-eye"></i></p>
+                            <p class="text-base">86k</p>
+                        </li>
+                        <li class="flex items-center ml-6">
+                            <p class="rounded-full border h-6 w-6 flex justify-center items-center mr-3"><i
+                                    class="fa-regular fa-star"></i></p>
+                            <p class="text-base">4.9</p>
+                        </li>
+                    </ul>
+                    <h2 class="mt-4 mb-6 text-2xl font-medium">Complete Python Bootcamp<br>From Zero to Hero in Python
+                    </h2>
+                    <ul class="flex justify-between">
+                        <li>
+                            <p class="font-medium text-3xl">$150.00</p>
+                        </li>
+                        <li>
+                            <a href="#" class="py-3 px-9 text-theme-color border rounded-se-2xl rounded-es-2xl text-lg font-medium border-theme-color hover:bg-theme-color hover:text-white hover:buttonBox">Buy Now</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- single-card -->
+            </div>
+        </div>
+        <!-- most-popular-end -->
     </main>
 
     <script src="./js/index.js"></script>
