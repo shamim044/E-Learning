@@ -26,10 +26,17 @@
             font-size: 1rem;
             ;
         }
+
         .our-mentors,
         header {
-            background-image: url(./images/banner1.png);
+            background-image: url(./images/banner-bg.png);
             background-size: cover;
+            background-position: left center;
+            background-repeat: no-repeat;
+        }
+        footer {
+            background-image: url(./images/footer2.png);
+            background-size: contain;
             background-position: left center;
             background-repeat: no-repeat;
         }
@@ -61,18 +68,33 @@
         .card-box-hov {
             box-shadow: 0px 0px 60px 0px rgba(255, 35, 89, 0.10);
         }
-        .most-popular-button li a{
+
+        .most-popular-button li a {
             background: rgba(155, 155, 155, 0.10);
         }
+
         .most-popular-button li a:hover,
-        :hover.most-card{
+        :hover.most-card {
             box-shadow: 0px 0px 60px 0px rgba(255, 35, 89, 0.10);
+        }
+        .none{
+            display: none;
+        }
+        body{
+            overflow-x: hidden;
         }
     </style>
 </head>
 
 <body class="ubuntu-font">
-    <header>
+    <header class="bg-[#121421] relative md:bg-contain">
+        <div class="hidden md:block absolute top-[145px] left-[145px]"><img src="./images/star.png" alt=""></div>
+        <div class="hidden md:block absolute md:top-[175px] lg:top-[214px] right-[183px]"><img src="./images/star.png" alt=""></div>
+        <div class="hidden md:block absolute top-[322px] right-[284px]"><img src="./images/bijly.png" alt=""></div>
+        <div class="hidden md:block absolute lg:top-[360px] md:top-[492px] md:left-[200px] lg:left-[207px] animate-bounce"><img src="./images/rocet.png" alt=""></div>
+        <div class="hidden md:block absolute lg:top-[360px] md:top-[492px] md:left-[200px] lg:left-[207px] animate-bounce"><img src="./images/rocet.png" alt=""></div>
+        <div class="hidden md:block absolute md:top-[620px] left-[198px] z-40"><img src="./images/banner-shap.png" alt=""></div>
+        <div class="hidden md:block absolute top-[482px] right-[74px] animate-spin"><img src="./images/since.png" alt=""></div>
         <!-- navbar-start -->
         <div class="border-b">
             <div class="max-w-[1256px] mx-auto px-5">
@@ -87,30 +109,30 @@
                             </label>
                             <ul tabindex="0"
                                 class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                                <li><a class="">Courses</a></li>
+                                <li><a>Courses</a></li>
                                 <li><a>Membership</a></li>
                                 <li><a>Teams</a></li>
                                 <li><a>Community</a></li>
                             </ul>
                         </div>
-                        <a href="#" class="border-r px-6 py-10"><img src="./images/Group 20 (2).png" alt=""></a>
+                        <a href="#" class="border-r px-6 py-[28px]"><img src="./images/Group 20 (2).png" alt=""></a>
                     </div>
                     <div class="navbar-center hidden lg:flex">
-                        <ul class="menu menu-horizontal p-0">
-                            <li class="border-l-0 px-6 py-10"><a
-                                    class="hover:bg-transparent text-base text-white">Courses</a></li>
-                            <li class="border-l px-6 py-10"><a
-                                    class="hover:bg-transparent text-base text-white">Membership</a>
+                        <ul class="menu menu-horizontal p-0 m-0">
+                            <li class="border-l"><a
+                                    class=" rounded-none hover:bg-transparent text-base text-white px-6 py-10 hover:text-white">Courses</a></li>
+                            <li class="border-l"><a
+                                    class="hover:bg-transparent text-base text-white px-6 py-10 hover:text-white">Membership</a>
                             </li>
-                            <li class="border-l px-6 py-10"><a
-                                    class="hover:bg-transparent text-base text-white">Teams</a></li>
-                            <li class="border-l border-r px-6 py-10 text-white"><a
-                                    class="hover:bg-transparent text-base">Community</a></li>
+                            <li class="border-l"><a
+                                    class="hover:bg-transparent text-base text-white  px-6 py-10 hover:text-white">Teams</a></li>
+                            <li class="border-l border-r text-white"><a
+                                    class="hover:bg-transparent text-base  px-6 py-10 hover:text-white">Community</a></li>
                         </ul>
                     </div>
                     <div class="navbar-end w-auto lg:w-[250px] justify-end ml-6">
                         <a href="#"
-                            class="bg-white rounded-se-lg rounded-es-lg py-4 px-8 boxShadow font-medium text-text-color buttonBox">Enroll
+                            class=" bg-white rounded-se-lg rounded-es-lg py-2 px-3 md:py-4 md:px-8 boxShadow font-medium text-text-color buttonBox">Enroll
                             Now</a>
                     </div>
                 </div>
@@ -119,16 +141,16 @@
         <!-- navbar-end -->
 
         <!-- banner-start -->
-        <div class="banner text-center pt-16 pb-80">
+        <div class="banner text-center pt-[73px] lg:pb-80 md:pb-40 pb-20">
             <h1 class="text-6xl text-white font-bold mb-16">Grow Your Skills to<br> Advance Your Career Path.</h1>
-            <ul class="flex justify-center mb-11">
-                <li>
+            <ul class="md:flex justify-center mb-11 flex-wrap">
+                <li class="">
                     <p class="text-white px-6">No Credit Card Required</p>
                 </li>
-                <li>
-                    <p class="text-white px-6 border-x-theme-color border-r border-l">7 Days Trial</p>
+                <li class="">
+                    <p class="text-white px-2 md:px-6 border-x-theme-color md:border-r md:border-l">7 Days Trial</p>
                 </li>
-                <li>
+                <li class="">
                     <p class="text-white px-6">Free For Teachers</p>
                 </li>
             </ul>
@@ -141,16 +163,16 @@
     </header>
     <main>
         <!-- banner-card -->
-        <div class="px-5 mt-[-225px] mb-10 ">
-            <div class="banner-card grid grid-cols-3 gap-20 w-[1215px] mx-auto">
+        <div class="px-5 mt-[-255px] mb-10 relative none lg:block">
+            <div class="banner-card grid lg:grid-cols-3 gap-20 max-w-[1368px] mx-auto px-5">
                 <div class="">
-                    <img src="./images/Group 33.png" class="w-[475px] h-[515px] object-cover">
+                    <img src="./images/Group 33.png" class="w-full object-cover">
                 </div>
                 <div class="">
-                    <img src="./images/Group 22.png" class="w-[475px] h-[515px] object-cover">
+                    <img src="./images/Group 22.png" class="w-full object-cover">
                 </div>
                 <div class="">
-                    <img src="./images/Group 33.png" class="w-[475px] h-[515px] object-cover">
+                    <img src="./images/Group 33.png" class="w-full object-cover">
                 </div>
             </div>
         </div>
@@ -159,7 +181,7 @@
         <!-- courses-start -->
         <div class="bg-[#FBF3EC] mt-[-330px] pb-[100px] clear-both pt-[330px]">
             <!-- our-course-start -->
-            <div class="grid grid-cols-2 max-w-[1368px] mx-auto px-5  gap-9 clear-both pt-16 pl-[67px] relative">
+            <div class="grid lg:grid-cols-2 max-w-[1368px] mx-auto px-5  gap-9 clear-both pt-16 pl-[67px] relative">
                 <div class="shap-lef absolute">
                     <img src="./images/cour-ab.png" alt="">
                 </div>
@@ -171,7 +193,7 @@
                     <a href="#"
                         class="text-white rounded-se-lg rounded-es-lg py-4 px-8 boxShadow font-medium bg-theme-color mt-11 mb-16 inline-block buttonBox">Visit
                         Courses</a>
-                    <div class="courses-button grid grid-cols-2 gap-8">
+                    <div class="courses-button grid md:grid-cols-2 grid-cols-1 gap-8">
                         <div class="single-course-button flex bg-white p-3 items-center rounded-lg">
                             <div
                                 class="h-[46px] w-[46px] bg-[#E5FFF3] rounded-lg flex justify-center items-center mr-4">
@@ -202,26 +224,29 @@
                         </div>
                     </div>
                 </div>
-                <div class="course-img h-[535px] max-w-[649px] bg-white rounded-2xl p-4 relative z-20">
-                    <img src="./images/weman.png" alt="" class="w-full h-full ">
-                    <div class="sucial-button flex absolute bottom-14">
-                        <div
-                            class="h-[48px] w-[48px] rounded-full bg-white cursor-pointer hover:bg-theme-color hover:text-white flex items-center justify-center">
-                            <i class="fa-solid fa-ellipsis"></i>
-                        </div>
-                        <div
-                            class="ml-6 h-[48px] w-[48px] rounded-full bg-white cursor-pointer hover:bg-theme-color hover:text-white flex items-center justify-center">
-                            <i class="fa-solid fa-microphone-slash"></i>
-                        </div>
-                        <div
-                            class="ml-6 h-[48px] w-[48px] rounded-full bg-white cursor-pointer hover:bg-theme-color hover:text-white flex items-center justify-center">
-                            <i class="fa-solid fa-phone"></i>
-                        </div>
-                        <div
-                            class="ml-6 h-[48px] w-[48px] rounded-full bg-white cursor-pointer hover:bg-theme-color hover:text-white flex items-center justify-center">
-                            <i class="fa-solid fa-video"></i>
+                <div class="hidden md:block course-img h-[535px] max-w-[649px] bg-white rounded-2xl p-4 relative z-20">
+                    <img src="./images/weman.png" alt="" class="w-full h-full object-cover">
+                    <div class="hidden md:block">
+                        <div class="sucial-button md:flex absolute bottom-14">
+                            <div
+                                class="h-[48px] w-[48px]  rounded-full bg-white cursor-pointer hover:bg-theme-color hover:text-white flex items-center justify-center">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </div>
+                            <div
+                                class="md:ml-3 lg:ml-6 h-[48px] w-[48px] rounded-full bg-white cursor-pointer hover:bg-theme-color hover:text-white flex items-center justify-center">
+                                <i class="fa-solid fa-microphone-slash"></i>
+                            </div>
+                            <div
+                                class="md:ml-3 lg:ml-6 h-[48px] w-[48px] rounded-full bg-white cursor-pointer hover:bg-theme-color hover:text-white flex items-center justify-center">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div
+                                class="md:ml-3 lg:ml-6 h-[48px] w-[48px] rounded-full bg-white cursor-pointer hover:bg-theme-color hover:text-white flex items-center justify-center">
+                                <i class="fa-solid fa-video"></i>
+                            </div>
                         </div>
                     </div>
+                   
                     <div class="absolute h-[170px] w-[170px] left-[-34px] bottom-[-45px]">
                         <img src="./images/cours1.png" alt="">
                     </div>
@@ -250,33 +275,33 @@
                 <p class="mb-10 mt-6">It is a long established fact that a reader will be distracted by the readable
                     content <br>of a page when looking at its layout.</p>
             </div>
-            <ul class="most-popular-button flex justify-center mb-10">
-                <li><a href="#"
-                        class="py-2 px-5 rounded-se-lg rounded-es-lg mx-3 hover:bg-theme-color hover:text-white">All
+            <ul class="most-popular-button flex flex-wrap justify-center mb-10">
+                <li class="xl:mb-0 mb-6"><a href="#"
+                        class="py-2 px-5 rounded-se-lg rounded-es-lg lg:mx-3 mx-1 hover:bg-theme-color hover:text-white">All
                         Courses</a></li>
-                <li><a href="#"
-                        class="py-2 px-5 rounded-se-lg rounded-es-lg mx-3 hover:bg-theme-color hover:text-white">UI/UX
+                <li class="xl:mb-0 mb-6"><a href="#"
+                        class="py-2 px-5 rounded-se-lg rounded-es-lg lg:mx-3 mx-1 hover:bg-theme-color hover:text-white">UI/UX
                         Design</a></li>
-                <li><a href="#"
-                        class="py-2 px-5 rounded-se-lg rounded-es-lg mx-3 hover:bg-theme-color hover:text-white">Gaming/Art</a>
+                <li class="xl:mb-0 mb-6"><a href="#"
+                        class="py-2 px-5 rounded-se-lg rounded-es-lg lg:mx-3 mx-1 hover:bg-theme-color hover:text-white">Gaming/Art</a>
                 </li>
-                <li><a href="#"
-                        class="py-2 px-5 rounded-se-lg rounded-es-lg mx-3 hover:bg-theme-color hover:text-white">Photography</a>
+                <li class="xl:mb-0 mb-6"><a href="#"
+                        class="py-2 px-5 rounded-se-lg rounded-es-lg lg:mx-3 mx-1 hover:bg-theme-color hover:text-white">Photography</a>
                 </li>
-                <li><a href="#"
-                        class="py-2 px-5 rounded-se-lg rounded-es-lg mx-3 hover:bg-theme-color hover:text-white">Health</a>
+                <li class="xl:mb-0 mb-6"><a href="#"
+                        class="py-2 px-5 rounded-se-lg rounded-es-lg lg:mx-3 mx-1 hover:bg-theme-color hover:text-white">Health</a>
                 </li>
-                <li><a href="#"
-                        class="py-2 px-5 rounded-se-lg rounded-es-lg mx-3 hover:bg-theme-color hover:text-white">Animation</a>
+                <li class="xl:mb-0 mb-6"><a href="#"
+                        class="py-2 px-5 rounded-se-lg rounded-es-lg lg:mx-3 mx-1 hover:bg-theme-color hover:text-white">Animation</a>
                 </li>
-                <li><a href="#"
-                        class="py-2 px-5 rounded-se-lg rounded-es-lg mx-3 hover:bg-theme-color hover:text-white">Digital
+                <li class="xl:mb-0 mb-6"><a href="#"
+                        class="py-2 px-5 rounded-se-lg rounded-es-lg lg:mx-3 mx-1 hover:bg-theme-color hover:text-white">Digital
                         Media</a></li>
-                <li><a href="#"
-                        class="py-2 px-5 rounded-se-lg rounded-es-lg mx-3 hover:bg-theme-color hover:text-white">Web
+                <li class="xl:mb-0 mb-6"><a href="#"
+                        class="py-2 px-5 rounded-se-lg rounded-es-lg lg:mx-3 mx-1 hover:bg-theme-color hover:text-white">Web
                         Development</a></li>
             </ul>
-            <div class="most-popular-card grid grid-cols-3 gap-8">
+            <div class="most-popular-card grid md:grid-cols-2 xl:grid-cols-3 grid-cols-1 gap-8">
                 <!-- single-card -->
                 <div class="most-card rounded-se-2xl rounded-es-2xl card-box p-6 hover:card-box-hov">
                     <img src="./images/card-1.png" class="rounded-lg w-full" alt="">
@@ -299,12 +324,14 @@
                     </ul>
                     <h2 class="mt-4 mb-6 text-2xl font-medium">Complete Python Bootcamp<br>From Zero to Hero in Python
                     </h2>
-                    <ul class="flex justify-between">
-                        <li>
+                    <ul class="md:flex justify-between">
+                        <li class="md:mb-0 mb-4">
                             <p class="font-medium text-3xl">$150.00</p>
                         </li>
                         <li>
-                            <a href="#" class="py-3 px-9 text-theme-color border rounded-se-2xl rounded-es-2xl text-lg font-medium border-theme-color hover:bg-theme-color hover:text-white hover:buttonBox">Buy Now</a>
+                            <a href="#"
+                                class="py-3 px-9 text-theme-color border rounded-se-2xl rounded-es-2xl text-lg font-medium border-theme-color hover:bg-theme-color hover:text-white hover:buttonBox">Buy
+                                Now</a>
                         </li>
                     </ul>
                 </div>
@@ -331,12 +358,14 @@
                     </ul>
                     <h2 class="mt-4 mb-6 text-2xl font-medium">Complete Python Bootcamp<br>From Zero to Hero in Python
                     </h2>
-                    <ul class="flex justify-between">
-                        <li>
+                    <ul class=" md:flex justify-between">
+                        <li  class="md:mb-0 mb-4">
                             <p class="font-medium text-3xl">$150.00</p>
                         </li>
                         <li>
-                            <a href="#" class="py-3 px-9 text-theme-color border rounded-se-2xl rounded-es-2xl text-lg font-medium border-theme-color hover:bg-theme-color hover:text-white hover:buttonBox">Buy Now</a>
+                            <a href="#"
+                                class="py-3 px-9 text-theme-color border rounded-se-2xl rounded-es-2xl text-lg font-medium border-theme-color hover:bg-theme-color hover:text-white hover:buttonBox">Buy
+                                Now</a>
                         </li>
                     </ul>
                 </div>
@@ -363,12 +392,14 @@
                     </ul>
                     <h2 class="mt-4 mb-6 text-2xl font-medium">Complete Python Bootcamp<br>From Zero to Hero in Python
                     </h2>
-                    <ul class="flex justify-between">
-                        <li>
+                    <ul class="md:flex justify-between">
+                        <li  class="md:mb-0 mb-4">
                             <p class="font-medium text-3xl">$150.00</p>
                         </li>
                         <li>
-                            <a href="#" class="py-3 px-9 text-theme-color border rounded-se-2xl rounded-es-2xl text-lg font-medium border-theme-color hover:bg-theme-color hover:text-white hover:buttonBox">Buy Now</a>
+                            <a href="#"
+                                class="py-3 px-9 text-theme-color border rounded-se-2xl rounded-es-2xl text-lg font-medium border-theme-color hover:bg-theme-color hover:text-white hover:buttonBox">Buy
+                                Now</a>
                         </li>
                     </ul>
                 </div>
@@ -395,12 +426,14 @@
                     </ul>
                     <h2 class="mt-4 mb-6 text-2xl font-medium">Complete Python Bootcamp<br>From Zero to Hero in Python
                     </h2>
-                    <ul class="flex justify-between">
-                        <li>
+                    <ul class="md:flex justify-between">
+                        <li class="md:mb-0 mb-4">
                             <p class="font-medium text-3xl">$150.00</p>
                         </li>
                         <li>
-                            <a href="#" class="py-3 px-9 text-theme-color border rounded-se-2xl rounded-es-2xl text-lg font-medium border-theme-color hover:bg-theme-color hover:text-white hover:buttonBox">Buy Now</a>
+                            <a href="#"
+                                class="py-3 px-9 text-theme-color border rounded-se-2xl rounded-es-2xl text-lg font-medium border-theme-color hover:bg-theme-color hover:text-white hover:buttonBox">Buy
+                                Now</a>
                         </li>
                     </ul>
                 </div>
@@ -427,12 +460,14 @@
                     </ul>
                     <h2 class="mt-4 mb-6 text-2xl font-medium">Complete Python Bootcamp<br>From Zero to Hero in Python
                     </h2>
-                    <ul class="flex justify-between">
-                        <li>
+                    <ul class="md:flex justify-between">
+                        <li class="md:mb-0 mb-4">
                             <p class="font-medium text-3xl">$150.00</p>
                         </li>
                         <li>
-                            <a href="#" class="py-3 px-9 text-theme-color border rounded-se-2xl rounded-es-2xl text-lg font-medium border-theme-color hover:bg-theme-color hover:text-white hover:buttonBox">Buy Now</a>
+                            <a href="#"
+                                class="py-3 px-9 text-theme-color border rounded-se-2xl rounded-es-2xl text-lg font-medium border-theme-color hover:bg-theme-color hover:text-white hover:buttonBox">Buy
+                                Now</a>
                         </li>
                     </ul>
                 </div>
@@ -459,12 +494,14 @@
                     </ul>
                     <h2 class="mt-4 mb-6 text-2xl font-medium">Complete Python Bootcamp<br>From Zero to Hero in Python
                     </h2>
-                    <ul class="flex justify-between">
-                        <li>
+                    <ul class="md:flex justify-between">
+                        <li class="md:mb-0 mb-4">
                             <p class="font-medium text-3xl">$150.00</p>
                         </li>
                         <li>
-                            <a href="#" class="py-3 px-9 text-theme-color border rounded-se-2xl rounded-es-2xl text-lg font-medium border-theme-color hover:bg-theme-color hover:text-white hover:buttonBox">Buy Now</a>
+                            <a href="#"
+                                class="py-3 px-9 text-theme-color border rounded-se-2xl rounded-es-2xl text-lg font-medium border-theme-color hover:bg-theme-color hover:text-white hover:buttonBox">Buy
+                                Now</a>
                         </li>
                     </ul>
                 </div>
@@ -474,30 +511,44 @@
         <!-- most-popular-end -->
 
         <!-- our-mentors start -->
-        <div class="our-mentors pb-[130px]">
+        <div class="our-mentors pb-[130px] bg-[#121421] relative">
+            <!-- shap -->
+            <div class="absolute top-[32px] left-[657px] hidden lg:block"><img src="./images/star.png" alt=""></div>
+            <div class="absolute top-[161px] right-[257px] hidden lg:block"><img src="./images/star.png" alt=""></div>
+            <div class="absolute top-[86px] lg:right-[804px] right-[988px] hidden lg:block"><img src="./images/bijly.png" alt=""></div>
+            <div class="absolute top-[360px] lg:top-[575px] left-[207px] animate-bounce hidden lg:block"><img src="./images/rocet.png" alt=""></div>
+            <div class="absolute bottom-[61px] left-[440px] animate-ping"><img src="./images/round.png" alt=""></div>
+            <div class="absolute top-[482px] right-[74px] animate-spin hidden lg:block"><img src="./images/since.png" alt=""></div>
+            <!-- shap -->
             <div class="max-w-[1368px] mx-auto px-5">
-                <div class="our-mentors-hadding flex justify-between items-center pt-[60px] pb-10">
-                    <h2 class="text-4xl font-bold text-white">Meet with our Professional<br>Mentor.</h2>
-                    <a href="#" class="py-3 px-10 text-theme-color border rounded-se-2xl rounded-es-2xl text-lg font-medium border-theme-color hover:bg-theme-color hover:text-white hover:buttonBox">View All</a>
+                <div class="our-mentors-hadding md:flex justify-between items-center pt-[60px] pb-10">
+                    <h2 class="text-4xl font-bold text-white mb-4 md:mb-0">Meet with our Professional<br>Mentor.</h2>
+                    <a href="#"
+                        class="py-3 px-10 text-theme-color border rounded-se-2xl rounded-es-2xl text-lg font-medium border-theme-color hover:bg-theme-color hover:text-white hover:buttonBox">View
+                        All</a>
                 </div>
                 <!-- our-mentor -->
-                <div class="grid grid-cols-4 gap-8">
+                <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-8">
                     <!-- single-mentors -->
                     <div class="single-mentor rounded-se-2xl rounded-es-2xl bg-white p-4">
                         <img src="./images/mentor-1.png" class="rounded-se-2xl rounded-es-2xl w-full" alt="">
                         <h3 class="text-center text-2xl font-medium mt-4 mb-2">Talan Dokidis</h3>
                         <p class="text-center">UI/UX Design</p>
                         <div class="mentors-social flex justify-center gap-6 mt-4">
-                            <div class="mentor-single-social flex items-center justify-center w-6 h-6 rounded-se-lg rounded-es-lg border bg-[#F7F7F7]">
+                            <div
+                                class="mentor-single-social flex items-center justify-center w-6 h-6 rounded-se-lg rounded-es-lg border bg-[#F7F7F7] cursor-pointer">
                                 <i class="fa-brands fa-facebook-f"></i>
                             </div>
-                            <div class="mentor-single-social flex items-center justify-center w-6 h-6 rounded-se-lg rounded-es-lg border bg-[#F7F7F7]">
+                            <div
+                                class="mentor-single-social flex items-center justify-center w-6 h-6 rounded-se-lg rounded-es-lg border bg-[#F7F7F7] cursor-pointer">
                                 <i class="fa-brands fa-instagram"></i>
                             </div>
-                            <div class="mentor-single-social flex items-center justify-center w-6 h-6 rounded-se-lg rounded-es-lg border bg-[#F7F7F7]">
+                            <div
+                                class="mentor-single-social flex items-center justify-center w-6 h-6 rounded-se-lg rounded-es-lg border bg-[#F7F7F7] cursor-pointer">
                                 <i class="fa-brands fa-twitter"></i>
                             </div>
-                            <div class="mentor-single-social flex items-center justify-center w-6 h-6 rounded-se-lg rounded-es-lg border bg-[#F7F7F7]">
+                            <div
+                                class="mentor-single-social flex items-center justify-center w-6 h-6 rounded-se-lg rounded-es-lg border bg-[#F7F7F7] cursor-pointer">
                                 <i class="fa-brands fa-linkedin-in"></i>
                             </div>
                         </div>
@@ -509,16 +560,20 @@
                         <h3 class="text-center text-2xl font-medium mt-4 mb-2">Madelyn Carder</h3>
                         <p class="text-center">UI/UX Design</p>
                         <div class="mentors-social flex justify-center gap-6 mt-4">
-                            <div class="mentor-single-social flex items-center justify-center w-6 h-6 rounded-se-lg rounded-es-lg border bg-[#F7F7F7]">
+                            <div
+                                class="mentor-single-social flex items-center justify-center w-6 h-6 rounded-se-lg rounded-es-lg border bg-[#F7F7F7] cursor-pointer">
                                 <i class="fa-brands fa-facebook-f"></i>
                             </div>
-                            <div class="mentor-single-social flex items-center justify-center w-6 h-6 rounded-se-lg rounded-es-lg border bg-[#F7F7F7]">
+                            <div
+                                class="mentor-single-social flex items-center justify-center w-6 h-6 rounded-se-lg rounded-es-lg border bg-[#F7F7F7] cursor-pointer">
                                 <i class="fa-brands fa-instagram"></i>
                             </div>
-                            <div class="mentor-single-social flex items-center justify-center w-6 h-6 rounded-se-lg rounded-es-lg border bg-[#F7F7F7]">
+                            <div
+                                class="mentor-single-social flex items-center justify-center w-6 h-6 rounded-se-lg rounded-es-lg border bg-[#F7F7F7] cursor-pointer">
                                 <i class="fa-brands fa-twitter"></i>
                             </div>
-                            <div class="mentor-single-social flex items-center justify-center w-6 h-6 rounded-se-lg rounded-es-lg border bg-[#F7F7F7]">
+                            <div
+                                class="mentor-single-social flex items-center justify-center w-6 h-6 rounded-se-lg rounded-es-lg border bg-[#F7F7F7] cursor-pointer">
                                 <i class="fa-brands fa-linkedin-in"></i>
                             </div>
                         </div>
@@ -530,16 +585,20 @@
                         <h3 class="text-center text-2xl font-medium mt-4 mb-2">Martin Schleifer</h3>
                         <p class="text-center">UI/UX Design</p>
                         <div class="mentors-social flex justify-center gap-6 mt-4">
-                            <div class="mentor-single-social flex items-center justify-center w-6 h-6 rounded-se-lg rounded-es-lg border bg-[#F7F7F7]">
+                            <div
+                                class="mentor-single-social flex items-center justify-center w-6 h-6 rounded-se-lg rounded-es-lg border bg-[#F7F7F7] cursor-pointer">
                                 <i class="fa-brands fa-facebook-f"></i>
                             </div>
-                            <div class="mentor-single-social flex items-center justify-center w-6 h-6 rounded-se-lg rounded-es-lg border bg-[#F7F7F7]">
+                            <div
+                                class="mentor-single-social flex items-center justify-center w-6 h-6 rounded-se-lg rounded-es-lg border bg-[#F7F7F7] cursor-pointer">
                                 <i class="fa-brands fa-instagram"></i>
                             </div>
-                            <div class="mentor-single-social flex items-center justify-center w-6 h-6 rounded-se-lg rounded-es-lg border bg-[#F7F7F7]">
+                            <div
+                                class="mentor-single-social flex items-center justify-center w-6 h-6 rounded-se-lg rounded-es-lg border bg-[#F7F7F7] cursor-pointer">
                                 <i class="fa-brands fa-twitter"></i>
                             </div>
-                            <div class="mentor-single-social flex items-center justify-center w-6 h-6 rounded-se-lg rounded-es-lg border bg-[#F7F7F7]">
+                            <div
+                                class="mentor-single-social flex items-center justify-center w-6 h-6 rounded-se-lg rounded-es-lg border bg-[#F7F7F7] cursor-pointer">
                                 <i class="fa-brands fa-linkedin-in"></i>
                             </div>
                         </div>
@@ -551,16 +610,20 @@
                         <h3 class="text-center text-2xl font-medium mt-4 mb-2">Marilyn Siphron</h3>
                         <p class="text-center">UI/UX Design</p>
                         <div class="mentors-social flex justify-center gap-6 mt-4">
-                            <div class="mentor-single-social flex items-center justify-center w-6 h-6 rounded-se-lg rounded-es-lg border bg-[#F7F7F7]">
+                            <div
+                                class="mentor-single-social flex items-center justify-center w-6 h-6 rounded-se-lg rounded-es-lg border bg-[#F7F7F7] cursor-pointer">
                                 <i class="fa-brands fa-facebook-f"></i>
                             </div>
-                            <div class="mentor-single-social flex items-center justify-center w-6 h-6 rounded-se-lg rounded-es-lg border bg-[#F7F7F7]">
+                            <div
+                                class="mentor-single-social flex items-center justify-center w-6 h-6 rounded-se-lg rounded-es-lg border bg-[#F7F7F7] cursor-pointer">
                                 <i class="fa-brands fa-instagram"></i>
                             </div>
-                            <div class="mentor-single-social flex items-center justify-center w-6 h-6 rounded-se-lg rounded-es-lg border bg-[#F7F7F7]">
+                            <div
+                                class="mentor-single-social flex items-center justify-center w-6 h-6 rounded-se-lg rounded-es-lg border bg-[#F7F7F7] cursor-pointer">
                                 <i class="fa-brands fa-twitter"></i>
                             </div>
-                            <div class="mentor-single-social flex items-center justify-center w-6 h-6 rounded-se-lg rounded-es-lg border bg-[#F7F7F7]">
+                            <div
+                                class="mentor-single-social flex items-center justify-center w-6 h-6 rounded-se-lg rounded-es-lg border bg-[#F7F7F7] cursor-pointer">
                                 <i class="fa-brands fa-linkedin-in"></i>
                             </div>
                         </div>
@@ -569,9 +632,141 @@
                 </div>
                 <!-- our-mentor -->
             </div>
-        </div> 
+        </div>
         <!-- our-mentors end -->
+
+        <!-- book-our-course -->
+        <div class="book-our-course lg:pt-[138px] pt-[80px] pb-[147px]">
+            <div class="max-w-[1368px] mx-auto px-5">
+                <div class="grid lg:grid-cols-2 grid-cols-1">
+                    <div class="book-text">
+                        <h2 class="text-4xl font-bold">Book Our Course & Improve Your<br>Skill.</h2>
+                        <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt amet sit<br>
+                            placerat diam praesent pharetra at. Gravida ornare mauris pretium tortor, ac in<br> nulla
+                            eleifend.</p>
+                        <a href="#"
+                            class="text-white rounded-se-lg rounded-es-lg py-4 px-8 boxShadow font-medium bg-theme-color mt-10 mb-16 inline-block buttonBox">Contact
+                            Us</a>
+                        <img src="./images/our-cours.png" alt="" class="rounded-se-[30px] rounded-es-[30px]">
+                    </div>
+                    <div class="book-img mt-7 lg:mt-0">
+                        <img src="./images/cours.png" alt="">
+                    </div>
+                </div>
+                <!-- counter-up -->
+                <div class="md:grid grid-cols-3 mt-20">
+                    <div class="mb-5 md:mb-0 border-l-[#ff8502] border-l pl-4">
+                        <h4 class="text-2xl mb-4"><span class="text-4xl font-bold text-[#FF8502]">586k+</span> student
+                        </h4>
+                        <p>Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Tincidunt amet sit placerat diam.
+                        </p>
+                    </div>
+                    <div class="mb-5 md:mb-0 border-l-[#ff8502] border-l pl-4">
+                        <h4 class="text-2xl mb-4"><span class="text-4xl font-bold text-[#FF8502]">250+</span> Courses
+                        </h4>
+                        <p>Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Tincidunt amet sit placerat diam.
+                        </p>
+                    </div>
+                    <div class="mb-5 md:mb-0 border-l-[#ff8502] border-l pl-4">
+                        <h4 class="text-2xl mb-4"><span class="text-4xl font-bold text-[#FF8502]">150+</span> Mentors
+                        </h4>
+                        <p>Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Tincidunt amet sit placerat diam.
+                        </p>
+                    </div>
+                </div>
+                <!-- counter-up -->
+            </div>
+        </div>
+        <!-- book-our-course -->
+
+        <!-- form-section -->
+        <div class="px-5">
+            <div class="relative form-section rounded-se-[30px] rounded-es-[30px] bg-[#121421] py-[60px] max-w-[1368px] mx-auto text-center">
+                <!-- shap -->
+                <div class="absolute top-[100px] left-[230px] hidden lg:block"><img src="./images/form-sha1.png" alt=""></div>
+                <div class="absolute top-[96px] right-[147px] hidden lg:block"><img src="./images/form-sha2.png" alt=""></div>
+                <div class="absolute right-[-20px] bottom-[-20px] animate-spin hidden lg:block"><img src="./images/form-sha3.png" alt=""></div>
+                <div class="absolute bottom-[0px] left-[-80px] hidden lg:block"><img src="./images/form-sha4.png" alt=""></div>
+                <div class="absolute top-[435px] left-[225px] animate-ping hidden lg:block"><img src="./images/star.png" alt=""></div>
+                <div class="absolute top-[500px] right-[183px] hidden lg:block"><img src="./images/star.png" alt=""></div>
+                <!-- shap -->
+                <div class="max-w-[590px] mx-auto">
+                    <h2 class="text-white font-bold text-4xl mb-6">Subscribe For Get Update Every<br>New Courses</h2>
+                    <p class="mb-10 text-white">150k students daily learn with e-lerning. Subscribe for new courses.</p>
+                    <form class="form-control relative">
+                        <input type="text" placeholder="Enter your email" class="p-[20px] rounded-se-2xl rounded-es-2xl">
+                        <a href="#" class="absolute right-[2px] top-[2px] rounded-se-2xl rounded-es-2xl bg-[#1fbcff] py-4 px-6 text-white font-medium text-lg">Subscribe</a>
+                    </form>
+                </div>
+    
+            </div>
+        </div>
+        
+        <!-- form-section -->
     </main>
+
+    <footer class="bg-[#FBF3EC] pt-[334px] mt-[-170px]">
+        <div class="max-w-[1368px] mx-auto px-5 md:grid md:grid-cols-2 lg:grid-cols-4 grid-cols-1 pb-20">
+            <div class="footer-logo mb-10 lg:mb-0">
+                <img src="./images/footer-logo.png" alt="">
+                <p class="mt-5 mb-4 text-[#1fbcff] font-medium text-2xl underline decoration-1 tracking-[5.28px]">Say Hello</p>
+                <p class="text-2xl">infor@youremail.com</p>
+                <div class="mentors-social flex items-center gap-3 mt-9">
+                    <p>Follow us:</p>
+                    <div
+                        class="mentor-single-social flex items-center justify-center w-6 h-6 rounded-se-lg rounded-es-lg border-[#FF2359] border bg-[#ff235919] cursor-pointer">
+                        <i class="fa-brands fa-facebook-f text-[#ff2359]"></i>
+                    </div>
+                    <div
+                        class="mentor-single-social flex items-center justify-center w-6 h-6 rounded-se-lg rounded-es-lg border-[#FF2359] border bg-[#ff235919] cursor-pointer">
+                        <i class="fa-brands fa-instagram text-[#ff2359]"></i>
+                    </div>
+                    <div
+                        class="mentor-single-social flex items-center justify-center w-6 h-6 rounded-se-lg rounded-es-lg border-[#FF2359] border bg-[#ff235919] cursor-pointer">
+                        <i class="fa-brands fa-twitter text-[#ff2359]"></i>
+                    </div>
+                    <div
+                        class="mentor-single-social flex items-center justify-center w-6 h-6 rounded-se-lg rounded-es-lg border-[#FF2359] border bg-[#ff235919] cursor-pointer">
+                        <i class="fa-brands fa-linkedin-in text-[#ff2359]"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-10 lg:mb-0">
+                <h3 class="text-2xl font-medium mb-6">Features</h3>
+                <ul>
+                    <li><a href="#" class="mb-4 inline-block">How it works</a></li>
+                    <li><a href="#" class="mb-4 inline-block">Why us?</a></li>
+                    <li><a href="#" class="mb-4 inline-block">Our Blog</a></li>
+                    <li><a href="#">Testimonial</a></li>
+                </ul>
+            </div>
+            <div class="mb-10 md:mb-0">
+                <h3 class="text-2xl font-medium mb-6">Our Courses</h3>
+                <ul>
+                    <li><a href="#" class="mb-4 inline-block">UI/UX design</a></li>
+                    <li><a href="#" class="mb-4 inline-block">Web development</a></li>
+                    <li><a href="#" class="mb-4 inline-block">Visual branding</a></li>
+                    <li><a href="#">App development</a></li>
+                </ul>
+            </div>
+            <div class="mb-10 md:mb-0">
+                <h3 class="text-2xl font-medium mb-6">Community</h3>
+                <ul>
+                    <li><a href="#" class="mb-4 inline-block">Refer a friend</a></li>
+                    <li><a href="#" class="mb-4 inline-block">Limited memberships</a></li>
+                    <li><a href="#" class="mb-4 inline-block">Scholarships</a></li>
+                    <li><a href="#">Free Courses</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copy-section flex flex-wrap max-w-[1368px] mx-auto px-5 pt-10 pb-16 border-t md:justify-between text-center justify-center">
+            <p class="mb-8 md:mb-0">Copyright &copy;2021 bito App.Inc.All Right Reserved</p>
+            <ul class="md:flex">
+                <li class="md:mr-6 mr-0"><a href="#">Cookie Preference</a></li>
+                <li><a href="#">Term & Condition</a></li>
+            </ul>
+        </div>
+    </footer>
 
     <script src="./js/index.js"></script>
 </body>
